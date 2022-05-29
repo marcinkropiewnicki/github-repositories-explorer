@@ -2,7 +2,8 @@ import axios from 'axios'
 import { githubActions } from './github-slice'
 import { toast } from 'react-toastify'
 
-const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN_TOO
+// const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN
+const GITHUB_TOKEN = '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'
 
 // automatically add authorization token to all axios API calls
 const github = axios.create({

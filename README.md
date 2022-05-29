@@ -19,7 +19,3 @@ Launches the test runner in the interactive watch mode.
 ### `npm run build`
 
 Builds the app for production to the `build` folder.
-
-## Demo Page
-
-You can see working page [here](https://github-repositories-explorer-2rqcisd5i-marcinkropiewnicki.vercel.app/)
