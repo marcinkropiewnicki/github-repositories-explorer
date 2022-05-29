@@ -1,0 +1,29 @@
+.spinner-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .spinner-logo {
+    animation: spinner-logo-spin infinite 20s linear;
+  }
+}
+
+.spinner {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+  color: #2c3e50;
+}
+
+@keyframes spinner-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
