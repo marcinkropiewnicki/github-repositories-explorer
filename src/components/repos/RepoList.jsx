@@ -2,7 +2,6 @@ import React from 'react'
 import RepoItem from './RepoItem'
 
 const RepoList = ({ repos }) => {
-  // console.log(repos)
   if (repos.length < 1) {
     return (
       <div className="accordion-item__content accordion-item__content--empty">

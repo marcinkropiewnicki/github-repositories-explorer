@@ -19,7 +19,7 @@ const UserSearch = () => {
 
   return (
     <div className="search__container">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} data-testid="search-form">
         <input type="text" placeholder="Enter username" ref={searchText} />
         <button type="submit">Search</button>
       </form>
