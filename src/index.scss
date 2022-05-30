@@ -35,7 +35,11 @@ body {
 .search__container {
   form {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+
+    @media screen and (min-width: 30rem) {
+      flex-direction: row;
+    }
   }
 
   input {
@@ -43,9 +47,15 @@ body {
     font-size: 1.5rem;
     padding-left: 2rem;
     line-height: 2em;
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: 30rem) {
+      margin-bottom: 0;
+    }
   }
   button[type='submit'] {
     font-size: 1.25rem;
+    line-height: 2.4em;
     padding-left: 2em;
     padding-right: 2em;
   }
@@ -105,7 +115,7 @@ body {
       grid-gap: 1rem;
 
       @media screen and (min-width: 60rem) {
-        grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
       }
 
       &--empty {
@@ -156,8 +166,16 @@ input:checked {
     margin: 0;
   }
 
-  // &__header {
-  // }
+  &__header {
+    font-size: 1.2rem;
+
+    @media screen and (min-width: 30rem) {
+      font-size: 1.5rem;
+    }
+    @media screen and (min-width: 40rem) {
+      font-size: 2rem;
+    }
+  }
 
   // &__subheader {
   // }
